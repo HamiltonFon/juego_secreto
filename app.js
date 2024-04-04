@@ -26,7 +26,7 @@ function verificarIntento(){
    
     console.log(intentos);
     if(numeroDeUsuario === numeroSecreto){
-        asignarTextoElemento('p',`Excelente, acertarte el número secreto en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
+        asignarTextoElemento('p',`Excelente, acertaste el número secreto en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
     }else{
         //El usuario no acerto 
